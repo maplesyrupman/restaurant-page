@@ -1,1 +1,1 @@
-console.log("Hey there");
+(()=>{let e=document.getElementById("content"),t=document.createElement("div");t.classList.add("test"),e.appendChild(t)})();
