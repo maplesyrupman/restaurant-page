@@ -5,6 +5,7 @@ const renderHome = (content) => {
     const chefImgDiv = document.createElement('div');
     chefImgDiv.classList.add('chefImgDiv');
     const titleHeading = document.createElement('h1');
+    titleHeading.classList.add('contentHeading')
     titleHeading.textContent = title;
     const introPara = document.createElement('p');
     introPara.textContent = intro;

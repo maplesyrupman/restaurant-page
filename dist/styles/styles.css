@@ -7,14 +7,19 @@ body, html {
     background-size: cover;
     background-attachment: fixed;
     box-sizing: border-box;
-
 }
 
 body {
     height: 100vh;
 }
 
-h1 {
+#navHeading {
+    position: absolute;
+    top: 10px;
+    font-size: 4rem;
+}
+
+.contentHeading {
     font-size: 4rem;
 }
 
@@ -30,16 +35,19 @@ nav {
     justify-content: center;
     z-index: 1;
     padding-top: 20px;
-    gap: 20px;
+    gap: 10px;
     opacity: 0.95;
+    height: 150px;
 }
 
 ul {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 35px;
     list-style-type: none;
     font-size: 2rem;
+    position: absolute;
+    bottom: 10px;
 }
 
 p {
@@ -50,6 +58,12 @@ p {
 
 .navItem {
     padding: 15px;
+    user-select: none;
+}
+
+.navItem:hover {
+    font-style: oblique;
+    text-decoration: underline;
 }
 
 .selected {
@@ -65,13 +79,13 @@ p {
     align-items: center;
     justify-content: center;
     overflow-y: scroll;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 #content {
     position: absolute;
-    top: 250px;
-    width: 800px;
+    top: 190px;
+    width: fit-content;
     max-width: 800px;
     min-height: 500px;
     padding: 50px;
