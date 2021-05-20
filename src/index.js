@@ -1,5 +1,11 @@
+import renderHome from './home';
+
 let content = document.getElementById('content');
 
-let aDiv = document.createElement('div');
-aDiv.classList.add('test');
-content.appendChild(aDiv);
+function clearContent() {
+    while (content.hasChildNodes()) {
+        content.removeChild(content.lastChild);
+    }
+}
+
+renderHome(content);
