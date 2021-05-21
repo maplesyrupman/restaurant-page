@@ -1,5 +1,6 @@
 import renderHome from './home';
 import renderContact from './contact';
+import renderMenu from './menu';
 
 let content = document.getElementById('content');
 let navLinks = Array.from(document.getElementsByClassName('navItem'));
